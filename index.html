@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White_house</title>
+
+    <style>
+
+    
+        body,
+        html {
+
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .item1 {
+            grid-area: header1;
+        }
+
+        .item2 {
+            grid-area: header2;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: secoond_nav;
+        }
+
+        .item5 {
+            grid-area: main_left;
+        }
+
+        .item6 {
+            grid-area: right;
+        }
+
+        .item7 {
+            grid-area: footer;
+        }
+
+        .item8 {
+            grid-area: middle;
+        }
+        .item9 {
+            grid-area: about;
+        }
+
+
+
+
+
+
+
+
+        .container {
+
+            display: grid;
+            grid-template-areas: 'header1 header1 header1 header1 header1 header1'
+                'header2 header2 header2 header2 header2 header2'
+                'main main main main main main'
+                'main main main main main main'
+                'main main main main main main'
+                'secoond_nav secoond_nav secoond_nav secoond_nav right right'
+                'main_left main_left main_left main_left right right'
+                'middle middle middle middle middle middle'
+                'about about about about about about'
+                'footer footer footer footer footer footer';
+
+            gap: 10px;
+            padding: 0px;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .item1 {
+
+            height: 14px;
+            width: 1583px;
+            background-image: url(wp4428299-american-flag-4k-wallpapers.jpg);
+
+
+
+
+
+        }
+
+        .container>div {
+
+            padding: 20px 0px;
+            font-size: 30px;
+            text-align: center;
+
+
+
+        }
+
+        .top {
+            display: grid;
+            grid-template-areas: 'left left left left r1 r2 r3';
+            ;
+
+
+        }
+
+        .left {
+            grid-area: left;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-align: start;
+            color: rgb(0, 0, 0);
+            transform: translate(30px, -25px);
+        }
+
+        .right1 {
+            grid-area: r1;
+            transform: translate(70%, -45%);
+
+
+
+        }
+
+        .right1 a {
+
+            text-decoration: none;
+            color: rgb(247, 244, 244);
+            font-size: 60%;
+        }
+
+        .right2 {
+            grid-area: r2;
+            transform: translate(28%, -45%);
+
+        }
+
+        .right2 a {
+
+            text-decoration: none;
+            color: rgb(247, 244, 244);
+            font-size: 60%;
+        }
+
+        .right2 a:hover {
+
+            text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+
+        }
+        .right1 a:hover {
+
+           text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+
+        }
+
+
+        .right3 {
+            grid-area: r3;
+        }
+
+        .right3 img {
+            height: 30px;
+            transform: translate(30%, -25%);
+        }
+
+        .right3 img:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+
+
+
+        .item2 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            background-color: rgb(41, 90, 145);
+            height: 15%;
+            width: 1583px;
+            transform: translateY(-15%);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            justify-content: center;
+            gap: 50px;
+            align-content: center;
+            font-size: 8px;
+        }
+
+
+
+
+        .item2>div {
+            transform: translateY(60%);
+            height: 70%;
+            
+        }
+
+        .item2 a {
+            text-decoration: none;
+            color: rgb(236, 230, 230);
+            font-size: 70%;
+        }
+
+        .item2 a:hover {
+            text-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .item3 {
+            object-fit: cover;
+            height: 60%;
+            width: 1583px;
+            transform: translateY(-38%);
+
+        }
+
+        .item4 {
+            transform: translate(2%, -630%);
+            width: 100%;
+            height: 20%;
+            border-bottom: 3px solid rgb(187, 187, 187);
+            align-items: center;
+            justify-content: center;
+       
+
+        }
+
+        .item5 {
+            height: 380px;
+            width: 110%;
+            transform: translateY(-180%);
+
+
+        }
+
+        .item6 {
+            width: 70%;
+            height: 800px;
+            transform: translate(37%, -75%);
+            background-color: white;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            border-top: 8px solid rgb(110, 6, 6);
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .txt {
+            left: 5%;
+            top: 10%;
+            height: 85%;
+            width: 30%;
+            background-color: rgb(4, 34, 100);
+            z-index: 2;
+            position: absolute;
+            padding: 0px 0px;
+            opacity: 60%;
+
+
+        }
+
+        .txt:hover {
+
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+            opacity: 85%;
+            transition: all 0.7s;
+        }
+
+        @font-face {
+            font-family: myfont;
+            src: url(Kanit-Bold.ttf);
+        }
+
+        h1>i {
+            color: rgb(196, 24, 24);
+            transform: translateX(-50px);
+        }
+
+        button {
+            background-color: rgb(196, 24, 24);
+            color: white;
+            height: 10%;
+            width: 20%;
+            transform: translateY(-550%);
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: rgb(241, 16, 16);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+            transition: all 0.5s;
+
+        }
+
+        .heading {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(44, 42, 42);
+            font-weight: bold;
+            text-align: start;
+            margin-top: 3%;
+        
+
+        }
+
+        .card {
+            float: left;
+            height: 350px;
+            width: 30%;
+            border: none;
+            margin: 1%;
+           
+
+
+        }
+
+        .card:hover {
+            border: 0.5px solid #777;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.4s;
+
+
+        }
+
+        .card-txt {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .heading2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(44, 42, 42);
+            font-weight: bold;
+            font-size: 30px;
+            border-bottom: 0.5px solid rgb(110, 6, 6);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+
+        .date {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(95, 94, 94);
+            font-weight: bold;
+            font-size: 70%;
+            transform: translateX(-26%);
+            margin-top: 40px;
+
+        }
+
+        .para {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(27, 26, 26);
+            font-weight: bold;
+            font-size: 65%;
+            margin-top: 10px;
+            padding: 0 4%;
+            text-align: start;
+
+        }
+
+        .item6 a {
+            text-decoration: none;
+        }
+
+        .heading3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(44, 42, 42);
+            font-weight: bold;
+            font-size: 25px;
+            border-bottom: 0.5px solid rgb(110, 6, 6);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+
+
+        }
+
+
+
+        .item7 {
+            transform: translateY(-90%);
+            height: 100%;
+            background-color: rgb(233, 230, 230);
+            opacity: 70%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            
+        }
+
+        .foot1 {
+            height: 80%;
+
+        }
+
+        .foot2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+        .col {
+            height: 400px;
+            width: 300px;
+            margin: 20px;
+            margin-top: 100px;
+        }
+
+        .col .heading {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(44, 42, 42);
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+
+        .col .lk {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+
+        }
+
+        .col .heading:hover {
+            text-shadow: none;
+            box-shadow: none;
+        }
+
+        .col .lk:hover {
+            text-shadow: none;
+        }
+
+        .box a:hover {
+            text-shadow: none;
+            border: 1px solid gray;
+        }
+
+        .photo:hover {
+            transition: all 0.3s;
+            box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
+            cursor: zoom-in;
+        }
+
+        @font-face {
+            font-family:font2 ;
+            src: url(EBGaramond-VariableFont_wght.ttf);
+        }
+
+        .item8 {
+            background-color: rgb(236,240,249);
+            transform: translateY(-100%);
+            height: 550px;
+            display: flex;
+            flex-direction: row;
+            font-family: font2;
+            color: rgb(9,29,50);
+
+        }
+        .col8 {
+
+
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            transform: translate(0,30px);
+        }
+        .card8 {
+            height: 18%;
+            background-color: white;
+            border-left: 5px solid rgb(237,190,135);
+            margin: 20px;
+            border-radius: 3%;
+        }
+        .card8 img {
+            
+            border-radius: 3%;
+        }
+
+        .card8:hover {
+            border-left: 5px solid rgb(90, 3, 3);
+            transition: all 1s;
+
+        }
+
+        .item9 {
+            height: 98%;
+            transform: translateY(-70%);
+            background-image: url(wp4428352-american-flag-4k-wallpapers.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 80%;
+            font-family: font2;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .about {
+
+            background-color: white;
+            transform: translateY(-20%);
+            width: 90%;
+            height: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 20px 10px 10px rgba(0, 0, 0, 0.2);
+
+
+
+           
+        }
+        .about2 {
+            margin-left: 200px;
+        }
+        .about3 {
+            margin-left: 100px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item1">
+
+            <div class="top">
+                <div class="left">
+                    <h2 style="color: white; font-size: 150%;">the <b>WHITE HOUSE</b></h2>
+                </div>
+                <div class="right1">
+                    <h3><a href="#">Contact Us</a></h3>
+                </div>
+                <div class="right2">
+                    <h3><a href="#">Get Email Updates</a></h3>
+                </div>
+                <div class="right3">
+                    <img src="flag.webp">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="item2">
+            <div class="logo">
+                <a href="#"><img src="the-white-house-logo-5BCA6E4718-seeklogo.com.png" height="30%"
+                        style="transform: translateY(-10%); box-shadow: none; position: relative;"></a>
+
+            </div>
+            <div><a href="#">BREIFING ROOM</a></div>
+            <div><a href="#">ISSUES</a></div>
+            <div><a href="#">THE ADMINISTRATION</a></div>
+            <div><a href="#">PARTICIPATE</a></div>
+            <div><a href="#">1600 PENN</a></div>
+        </div>
+        <div class="item3" style="padding: 0%;">
+            <img src="708186.jpg" height="100%" style="width: 100%; object-fit: cover; object-position: 0 25%; z-index: 1;position: relative;">
+            <div class="txt">
+                <h1
+                    style="color: rgb(255, 255, 255); border-top: 4px solid rgb(255, 255, 255); border-bottom: 4px solid rgb(255, 255, 255); font-family: myfont; margin-top: 7%; margin-bottom: 60%; font-size: 150%;">
+                    STATE <i>OF THE</i> UNION</h1>
+                <p
+                    style="transform: translateY(-160%); color: white; text-align: center; padding-left: 10%; padding-right: 10%; margin-top: 0%; font-size: 95%;">
+                    The president wil address the nation this Tuesday, and the very best place to experience it is at
+                    the White House.<br>Say youll be watching</p>
+                <button type="button">I'M IN</button>
+            </div>
+        </div>
+        <div class="item4">
+            <div class="heading">POPULAR TOPICS</div>
+        </div>
+        <div class="item5">
+            <div class="card"><img src="i1.jpg" height="50%" style="margin: 0;">
+                <div class="card-txt">Explore a visual collection of highlghts from throughout 2022</div>
+            </div>
+            <div class="card"><img src="i2.jfif" height="50%" style="margin: 0;">
+                <div class="card-txt">President is taking executive action to fix the system</div>
+            </div>
+            <div class="card"><img src="i3.jpg" height="50%" style="margin: 0;">
+                <div class="card-txt">Winson Gayle set to represent the little corner from USA</div>
+            </div>
+
+
+
+        </div>
+        <div class="item6">
+            <div class="heading2">TOP NEWS</div>
+            <div class="box">
+                <a href="#">
+                    <div class="date">January 12, 2:51 PM</div>
+                    <div class="para">This is how president is making the text code work for Middle-Class families</div>
+                </a>
+
+                <a href="#">
+                    <div class="date">January 13, 3:13 PM</div>
+                    <div class="para">Big block of cheese is black, and it's feta then ever </div>
+                </a>
+                <a href="#">
+                    <div class="date">January 15, 4:25 PM</div>
+                    <div class="para">These three women talked to the president today about paid leave </div>
+                </a>
+            </div>
+            <div>
+                <div class="heading3">PHOTO OF THE DAY</div>
+
+                <a href="#"><img src="meet.jpg" height="250px" style="margin-top: 30px;" class="photo"></a>
+            </div>
+
+        </div>
+        <div class="item8">
+            <div class="txt8" style="width: 50%;">
+                <h3 style="position: relative; left: 12%; font-size: 80%; transform: translate(0, 75px); text-align: start;">INVESTING IN THE</h3><br>
+                <h1 style="position: relative; left: 10%; font-size: 250%; text-align: start; margin-top: 3%; width: 60%;">AMERICAN<BR>PEOPLE</h1>
+                <p style="position: relative; left: 10%; text-align: start; margin-bottom: 10%; font-size: 90%; width: 80%;">From rebuilding our infrastructure to lowering costs for families, President Biden’s economic agenda is investing in America.</p>   
+            </div>
+            <div class="col8">
+                <div class="card8">
+                    <h3 style="font-size: 22px; text-align: start; position: relative; top: 27%; left: 4%; font-size: 60%; width: 50%;">Investing in America</h3>
+                    <img src="c1.jpg" height="80%" style="position: relative; left: 26%; bottom: 37%;">
+                </div>
+                <div class="card8">
+                    <h3 style="font-size: 22px; text-align: start; position: relative; top: 27%; left: 4%;font-size: 60%; width: 50%;">Infrastructure Projects</h3>
+                    <img src="c2.jpeg" height="80%" style="position: relative; left: 26%; bottom: 55%;">
+                </div>
+                <div class="card8">
+                    <h3 style="font-size: 22px; text-align: start; position: relative; top: 27%; left: 4%;font-size: 60%; width: 50%;">Child Tax Credit</h3>
+                    <img src="c3.jpg" height="80%" style="position: relative; left: 26%; bottom: 37%;">
+                </div>
+            </div>
+
+            <div class="col8">
+                <div class="card8">
+                    <h3 style="font-size: 22px; text-align: start; position: relative; top: 27%; left: 4%;font-size: 60%; width: 50%;">Affordable Connectivity</h3>
+                    <img src="c4.jpg" height="80%" style="position: relative; left: 26%; bottom: 55%;">
+                </div>
+                <div class="card8">
+                    <h3 style="font-size: 22px; text-align: start; position: relative; top: 27%; left: 4%;font-size: 60%; width: 50%;">Clean Energy</h3>
+                    <img src="c5.jpg" height="80%" style="position: relative; left: 26%; bottom: 37%;">
+                </div>
+                
+            </div>
+
+            <div></div>
+
+        </div>
+
+        <div class="item9">
+
+            <div>
+                <h4 style="font-size:150%; text-shadow: 2px 2px 2px black;">THE</h4>
+                <h1 style="font-size:300%; margin-top: 0px; transform: translateY(-45%);  text-shadow: 2px 2px 2px black;">WHITE HOUSE</h1>
+            </div>
+            <div class="about">
+                <div class="about1">
+                    <a href="#"><img src="biden.jpg" height="300px" style="border-radius: 50%; position: relative; left: 50%; top: 10%;"></a>
+                    <h2 style="color: black; position: relative; left: 50%;">President Biden</h2>
+                    
+                </div>
+                <div class="about2">
+                    <a href="#"><img src="harris.jpg" height="300px" style="border-radius: 50%; position: relative; left: 50%; top: 10%;"></a>
+                    <h2 style="color: black; position: relative; left: 50%;">VP Harris</h2>
+                </div>
+
+                <div class="about3">
+                    <a href="#"><img src="Antony_Blinken.jpg" height="300px" style="border-radius: 50%; position: relative; left: 50%; top: 10%;"></a>
+                    <h2 style="color: black; position: relative; left: 50%;">Secretary Antony</h2>
+                </div>
+
+            </div>
+
+
+        </div>
+       
+
+
+
+
+
+        <div class="item7">
+            <div class="foot1">
+                <a href="#" style="box-shadow: none;"><img
+                        src="1-15065_grey-instagram-logo-no-background-hd-png-download-removebg-preview.png"
+                        height="50px" style="opacity: 75%; transform: translate(-20px,10px);"></a>
+                <a href="#" style="box-shadow: none;"><img
+                        src="youtube-grey-icon-logo-png_seeklogo-528551-removebg-preview.png" height="40px;"
+                        style="transform: translate(-0px,8px);"></a>
+                <a href="#" style="box-shadow: none;"><img
+                        src="gray-facebook-logo-png-11536002413lctvryrhnt-removebg-preview.png" height="45px"
+                        style="opacity: 75%; transform: translate(30px,10px);"></a>
+            </div>
+            <div class="foot2">
+                <div class="col">
+                    <a href="#" style="text-decoration: none;"><span class="heading">HOME</span><a><br>
+                            <a href="#" style="box-shadow: none; color: rgb(20, 118, 199);" class="lk">Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Fugiat iure sit amet illum perferendis eum nihil
+                                officia molestias voluptatibus incidunt tempore veritatis, vel reprehenderit repudiandae
+                                placeat rerum accusantium non nesciunt.
+                            </a>
+                </div>
+                <div class="col">
+                    <a href="#" style="text-decoration: none;"><span class="heading">BREIF</span><a><br>
+                            <a href="#" style="box-shadow: none; color: rgb(20, 118, 199);" class="lk">Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Fugiat iure sit amet illum perferendis eum nihil
+                                officia molestias voluptatibus incidunt tempore veritatis, vel reprehenderit repudiandae
+                                placeat rerum accusantium non nesciunt.
+                            </a>
+                </div>
+                <div class="col">
+                    <a href="#" style="text-decoration: none;"><span class="heading">ISSUES</span><a><br>
+                            <a href="#" style="box-shadow: none; color: rgb(20, 118, 199);" class="lk">Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Fugiat iure sit amet illum perferendis eum nihil
+                                officia molestias voluptatibus incidunt tempore veritatis, vel reprehenderit repudiandae
+                                placeat rerum accusantium non nesciunt.
+                            </a>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
